@@ -1,0 +1,642 @@
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('fonts/Gotham-BookItalic.woff2') format('woff2'),
+        url('fonts/Gotham-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Black.woff2') format('woff2'),
+        url('fonts/Gotham-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('fonts/Gotham-Book.woff2') format('woff2'),
+        url('fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* COLORES */
+@amarillo: #fcc315;
+@azul: #003471;
+
+
+/*Fix logo*/
+
+.woodmart-logo img[src$=".svg"] {
+    width: 100%;
+}
+
+.menu-style-default .menu-simple-dropdown .color-scheme-dark ul li a, .menu-style-default .topbar-menu .menu-item-my-account ul li a, .navigation-style-bordered .menu-simple-dropdown .color-scheme-dark ul li a, .navigation-style-default .menu-simple-dropdown .color-scheme-dark ul li a, .navigation-style-separated .menu-simple-dropdown .color-scheme-dark ul li a, .whb-enabled .vertical-navigation .menu-simple-dropdown ul li a, .whb-header-links .menu-simple-dropdown ul li a {
+    text-transform: uppercase;
+}
+/*Desactivar titulo*/
+
+.page-template-home,
+.page-template-quienes-somos,
+.page-template-mantenimiento,
+.page-template-reestructuracion,
+.page-template-venta{
+    .page-title-default{
+        display: none;
+    }
+    
+    .website-wrapper{
+        background: url(../img/inicio/fondo-agua.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .main-page-wrapper,
+    .footer-container,
+    .woodmart-prefooter{
+        background: none;
+        padding-top: 0;
+    }
+    .woodmart-prefooter{
+        display: none;
+    }
+    
+}
+
+/*Fuentes por defecto*/
+h1,h2,h3,h4,h5,h6,.boton{
+    font-family: 'Gotham';
+    font-weight: normal;   
+}
+
+
+p{
+    font-family: 'Gotham Book';
+    font-size: 18px;  
+    color: #000;
+}
+
+.main-header{
+    background: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    &.blanco{
+        background: #fff;
+    }
+}
+
+.flex{
+    display: flex;
+    .columna{
+        width: 50%;
+        padding: 0px;
+    }
+}
+
+
+
+
+/*Botones*/
+
+a.boton,
+input.boton{
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 120px;
+    text-align: center;
+    transition: all .5s ease;
+    border-radius: 5px;
+    
+    
+    &:hover{
+      box-shadow: 0 20px 5px -10px rgba(0,0,0, 0.4);
+      transform: translateY(10px);
+    }
+    
+    &.center{
+        margin: 15px auto;
+    }
+    &.amarillo{
+        background-color: @amarillo;
+        color: #000;
+        span{
+            border-bottom: 2px solid #000;
+        }
+    }
+    
+    &.azul{
+        background-color: #002455;
+        color: #fff;
+        span{
+            border-bottom: 2px solid @amarillo;
+        }
+        
+        &.text-amarillo{
+            color: @amarillo;
+        }
+        
+        &.subrayado-amarillo{
+            border-bottom: 2px solid @amarillo;
+        }
+    }
+}
+
+/*Ajustes Estandar para los contenedores*/
+
+.template-section{
+    
+    /*Colores texto*/
+    
+    .txt-amarillo{
+        color: @amarillo;
+    }
+    
+    .txt-azul{
+         color: @azul;
+    }
+    
+    /*Estilo de texto */
+    
+    .font-italic{
+        font-style: italic;
+    }
+    
+    .bold{
+            font-weight: 600;
+    }
+    
+    .center{
+        text-align: center;
+    }  
+    
+    .padding-50{
+         padding: 50px 0;
+    }
+    
+    .padding-100{
+         padding: 100px 0;
+    }
+    
+    .block{
+            display: block;
+    }
+    
+    
+    h2{
+        
+        font-size: 56px;
+        line-height: 0.5em;
+        
+        span.amarillo{
+            color: @amarillo;
+            font-size: 35px;
+            font-weight: 600;
+        }
+              
+
+        b{
+            display: block;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        
+        &.text-light{
+            color: #fff;           
+        }
+        
+        .resaltado{
+            background-color: @amarillo;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .subrayado{
+            border-bottom: 4px solid @azul;
+        }
+    }
+    
+    .bold{
+        font-weight: 600;
+    }
+    
+     a.boton{
+        max-width: 200px;       
+        font-size: 1.6em;
+    }
+    
+    img.center{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    p{
+        &.blanco{
+            color: #fff;
+        }
+    }
+}
+
+/*Página de inicio */
+
+#quienes-somos{
+    background: url(../img/inicio/fondo-quienes-somos.png) no-repeat center top;
+    background-size: cover;
+    padding: 150px 0 50px;
+    position: relative;
+    margin-top: -120px;
+    h2{
+        color: #fff;
+    }
+    
+    p{
+        background-color: rgba(0,37,84,0.8);
+        padding: 20px;
+    }
+}
+
+#servicios, 
+#mantenimiento,
+#reestructuracion,
+#venta{
+    
+    h2{
+        margin-bottom: 60px;
+    }
+    
+    p{
+        padding: 20px 40px;
+    }
+    
+    img.servicio{
+        
+    }
+    
+    .frase{
+        p{
+           color: @amarillo;
+            font-family: 'Gotham Book';
+            font-style: italic;
+            text-align: center;
+            font-size: 2.5em; 
+            font-weight: 600;
+        }
+        
+    }
+    
+    .mantenimiento,
+    .reestructuracion{
+        min-height: 690px;
+        
+        .flex p{
+            width: 590px;
+            padding-top: 180px;
+            text-align: justify;
+            font-size: 1.6em;
+        }
+        
+        img{
+            position: absolute;
+            right: -325px;
+        }
+        
+        .frase{
+            margin-top: 100px;
+        }
+    }
+    
+    .reestructuracion{
+        
+       .flex p{
+            float: right;
+            width: 480px;
+            padding-top: 110px;
+        }
+        
+        img{
+            position: absolute;           
+            left: -0px;
+        }
+        
+        .frase{
+            margin-top: 0px;
+        }
+    }
+    
+    h3{
+        color: @azul;
+        padding: 0 40px;
+        text-align: left;
+    }
+    
+    .opciones{
+        border: 3px solid @azul;
+        padding: 10px 20px;
+        margin-left: 40px;
+        width: 370px;
+        p{
+            padding: 0;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #3e3e3e;
+        }
+    }
+}
+
+#venta{
+    
+    .flex{
+        padding: 50px 50px;
+        
+        p{
+            padding-top: 20px;
+           min-height: 100px; 
+        }
+    }
+}
+
+#intro-quienes{
+    background: url(../img/qs/banner.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 50px;
+    background-attachment: fixed;
+    h2{
+        color: #fff;
+        text-shadow: 2px 3px 4px rgba(0,0,0,0.7);
+    }
+    
+    p{
+        background-color: rgba(0,0,0,0.7);
+        padding: 20px;
+    }
+}
+
+
+#mision-vision{
+    
+    h2{
+        margin-bottom: 60px;       
+        text-align: center;
+    }
+    
+    p{
+        padding: 20px 40px;
+    }
+    
+    
+ 
+    .mision,
+    .vision{
+        height: 530px;
+        
+        
+        .flex {   
+            
+            .columna:first-child{
+                width: 470px;
+            }
+                p{  
+                    text-align: justify;
+                    font-size: 1.6em;
+                }
+             }
+        
+        img{
+            position: absolute;
+            right: -208px;
+        }
+        
+   
+    }
+    
+    .vision{
+        
+        
+        .flex {   
+            .columna:first-child{
+                width: 50%;
+            }
+        }
+        
+       .flex p{
+            float: right;
+            width: 550px;
+        }
+        
+        img{
+            position: absolute;           
+            left: -315px;
+        }
+
+    }
+}
+
+#valores{
+    .flex{
+        margin-top: 50px;
+        text-align: center;
+        padding: 0 50px;
+        .valor{
+            .icono{
+                min-height: 120px;
+            }
+            
+            h3{
+                color: @amarillo;
+                font-weight: 600;
+            }
+            
+            p{
+                padding: 10px 25px;
+            }
+        }
+    }
+}
+
+
+#mantenimiento{
+    .mantenimiento{
+        .flex{
+            .columna:first-child{
+                padding-top: 140px;
+                p{
+                    padding: 0 50px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
+    .profesionales{
+        margin-top: 50px;
+        img{
+            position: absolute;
+            left: -330px;
+        }
+    }
+}
+
+#reestructuracion{
+    .reestructuracion{
+        .flex{
+            .columna:last-child{
+                padding-top: 140px;
+                p{
+                    padding: 0 50px;
+                    font-size: 18px;
+                }
+            }
+        }
+        
+        .frase{
+            margin-top: 50px;
+        }
+    }
+    
+   
+    
+    .ahorro{
+        margin-top: 50px;
+        min-height: 671px;
+        img{
+            position: absolute;
+            right: -330px;
+        }
+        
+        p{
+            padding-right: 60px;
+            text-align: justify;
+        }
+    }
+    
+    
+}
+
+#venta{
+    .venta{
+        min-height: 1000px;
+        .flex{
+            .columna:first-child{
+                padding-top: 0px;
+                > p{
+                    padding: 0 50px;
+                    font-size: 18px;
+                    text-align: justify;
+                }
+            }
+            
+            .columna:last-child{
+                img{
+                    position: absolute;
+                }
+            }
+        }
+    }
+    
+    .generadores{
+        margin-top: 50px;
+        min-height: 1100px;
+        img{
+            position: absolute;
+            left: -330px;
+        }
+        
+        p{
+            text-align: justify;
+            padding-left: 20px;
+        }
+        
+        .flex{
+           .columna:last-child{               
+                padding-left: 70px;
+                
+               h3, p{
+                   padding-left: 0;
+               }
+               
+               .opciones{
+                   margin-left: 0;
+               }
+            } 
+        }
+    }
+}
+
+footer#contacto{
+    .contacto{
+        padding-bottom: 50px;
+    }
+    .titulo-contacto{
+        position: absolute;
+        left: -29px;
+        width: 100%;
+    }
+    
+    .correo{
+        margin-top: 220px;
+        background: @amarillo;        
+        padding: 10px;
+        margin-bottom: 20px;
+        a{
+            color: #fff;
+            padding-left: 10px;
+            font-size: 1.4em;
+        }
+    }
+    
+    .mapa{
+        margin-top: 220px;
+        iframe{
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .sub-footer{
+       background-color: @azul; 
+       color: #fff;
+        padding: 20px;
+        a{
+            color: #fff;
+        }
+        
+        .bloque{
+            justify-content: center;
+            align-items: center;
+            
+            h4{
+                color: #fff;
+                margin: 0;
+            }
+            
+            img{
+                max-width: 45px;
+            }
+            .columna:first-child{
+                width: 60px;
+            }
+            
+            .columna:last-child{
+                width: 80%;
+                 padding-left: 10px;   
+                
+            }
+        }
+    }
+    
+}
