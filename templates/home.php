@@ -55,7 +55,7 @@ get_header();
 
                 <div class="frase">
                     <p>¡Disfruta de tu alberca, con seguridad y confort!</p>
-                    <a href="#" class="boton azul center">ME INTERESA</a>
+                    <a href="/mantenimiento-de-calderas-en-cuernavaca/" class="boton azul center">ME INTERESA</a>
                 </div>
             </article>
 
@@ -73,7 +73,7 @@ get_header();
 
                 <div class="frase">
                     <p>¡Vale la pena ahorrar, sin sacrificar la calidad y el confort!</p>
-                    <a href="#" class="boton azul center">ME INTERESA</a>
+                    <a href="/reestructuracion-actualizacion-automatizacion-y-ahorro-de-gas-en-calderas/" class="boton azul center">ME INTERESA</a>
                 </div>
             </article>
 
