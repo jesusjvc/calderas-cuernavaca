@@ -103,7 +103,7 @@ get_header();
                 </div>
                 <div class="columna">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/inicio/3.png" alt="Generadores de Vapor en Gas LP">
-                    <p>Generadores de vapor en gas L.P.  o natural y eléctricos para la zona residencial, comercial y hotelera</p>
+                    <p>Generadores de vapor en gas L.P.  o natural y eléctricos para la zona residencial, comercial, SPA y hotelera</p>
                     <a href="" class="boton azul center">Me interesa</a>
                 </div>
             </div>

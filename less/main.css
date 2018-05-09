@@ -478,6 +478,9 @@ input.boton.azul.subrayado-amarillo {
 }
 #venta .venta .flex .columna:last-child img {
   position: absolute;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 616px;
 }
 #venta .generadores {
   margin-top: 50px;
